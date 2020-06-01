@@ -14,7 +14,7 @@ import com.accurate.solutions.springbootnotomcat.model.Customer;
 
 @RestController
 @RequestMapping("/customer")
-public class TestController {
+public class HomeController {
 
     	@GetMapping(value = "/test")
     	public String customerInformation(){
