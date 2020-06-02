@@ -16,9 +16,9 @@ import com.accurate.solutions.springbootnotomcat.model.Customer;
 @RequestMapping("/customer")
 public class HomeController {
 
-    	@GetMapping(value = "/test")
+    	@GetMapping(value = "/health")
     	public String customerInformation(){
-            return "Hey, I am from external weblogic";
+            return "Hey, I am from external weblogic container";
         }
     	
     	@GetMapping(value = "/all")
