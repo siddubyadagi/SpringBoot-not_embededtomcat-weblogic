@@ -1,4 +1,4 @@
-package com.accurate.solutions.springbootnotomcat;
+package com.accurate.solutions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,18 +10,18 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.accurate.solutions.springbootnotomcat.model.Customer;
+import com.accurate.solutions.model.Customer;
 
 @RestController
-@RequestMapping("/customer")
+@RequestMapping("/springboot/api")
 public class HomeController {
 
-    	@GetMapping(value = "/test")
+    	@GetMapping(value = "/health")
     	public String customerInformation(){
-            return "Hey, I am from external weblogic";
+            return "Hey, I am from external weblogic container";
         }
     	
-    	@GetMapping(value = "/all")
+    	@GetMapping(value = "/customer/all")
     	public ResponseEntity<List<Customer>> getCustomers() {
     		
     		List<Customer> customers = new ArrayList<>();
@@ -39,7 +39,7 @@ public class HomeController {
     		return new ResponseEntity<List<Customer>>(customers, HttpStatus.OK);
     	}
     	
-    	@GetMapping(value = "/{id}")
+    	@GetMapping(value = "/customer/{id}")
     	public ResponseEntity<Customer> getCustomerById(@PathVariable("id") int id){
     		
     		if(id <= 2) {

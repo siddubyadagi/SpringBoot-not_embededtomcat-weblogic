@@ -1,21 +1,13 @@
-package com.accurate.solutions.springbootnotomcat;
+package com.accurate.solutions;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
-import org.springframework.web.WebApplicationInitializer;
 
 @SpringBootApplication
-public class SpringbootNotomcatApplication extends SpringBootServletInitializer implements WebApplicationInitializer {
-	
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(SpringbootNotomcatApplication.class);
-	}
+public class SpringbootApplication{
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootNotomcatApplication.class, args);
+		SpringApplication.run(SpringbootApplication.class, args);
 	}
 
 }

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.accurate.solutions.springbootnotomcat.model;
+package com.accurate.solutions.model;
 
 /**
  * @author sidagond.byadagi
