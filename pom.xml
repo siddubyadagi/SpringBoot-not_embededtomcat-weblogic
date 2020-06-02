@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.accurate.solutions</groupId>
-	<artifactId>springboot-notomcat</artifactId>
+	<artifactId>SpringBoot-not_embededtomcat-weblogict</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
 	<name>springboot-notomcat</name>
